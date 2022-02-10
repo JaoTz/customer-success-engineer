@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  font-family: "Poppins";
+  padding: 5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title,
+.sub-title {
+  line-height: 0;
+}
+
+.sub-title {
+  font-size: 0.8rem;
+}
+
+.link {
+  margin: 2rem 0;
+  appearance: none;
+  text-decoration: underline;
+  color: black;
+}
+
+@keyframes grad {
+  0% {
+    background-color: #8bc6ec;
+    background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  }
+  100% {
+    background-image: linear-gradient(135deg, #9599e2 0%, #8bc6ec 100%);
+  }
+}
+
+.btn-back {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 2rem;
+}
